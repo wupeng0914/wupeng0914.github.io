@@ -81,15 +81,15 @@
 
 
 
-<meta name="description" content="使用Hexo + GitHub 搭建个人博客站前言 关于为什么要搭建此博客站？">
+<meta name="description" content="使用Hexo + GitHub 搭建个人博客站前言 关于为什么要搭建此博客站？ 作为一名欢乐（kubi）的开发狗，总是需要不断的学习提升自己，这个时候我们需要一个良好的平台去记录下个人的学习心得（踩得各种坑），以便于以后的查阅，因此便有了搭建个人博客的想法，此博客也便应运而生。  搭建 本过程是在Mac上进行，其他系统环境可能会有不同，可自行百度  1、安装配置Git1# 检查是否已经安装了git">
 <meta name="keywords" content="工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HEXO! 搭建我的博客站！">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;02&#x2F;HEXO-%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%AB%99%EF%BC%81&#x2F;index.html">
 <meta property="og:site_name" content="修道小和尚">
-<meta property="og:description" content="使用Hexo + GitHub 搭建个人博客站前言 关于为什么要搭建此博客站？">
+<meta property="og:description" content="使用Hexo + GitHub 搭建个人博客站前言 关于为什么要搭建此博客站？ 作为一名欢乐（kubi）的开发狗，总是需要不断的学习提升自己，这个时候我们需要一个良好的平台去记录下个人的学习心得（踩得各种坑），以便于以后的查阅，因此便有了搭建个人博客的想法，此博客也便应运而生。  搭建 本过程是在Mac上进行，其他系统环境可能会有不同，可自行百度  1、安装配置Git1# 检查是否已经安装了git">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-02T09:45:20.363Z">
+<meta property="og:updated_time" content="2019-12-03T05:05:28.563Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -354,7 +354,37 @@
       
         <h3 id="使用Hexo-GitHub-搭建个人博客站"><a href="#使用Hexo-GitHub-搭建个人博客站" class="headerlink" title="使用Hexo + GitHub 搭建个人博客站"></a>使用Hexo + GitHub 搭建个人博客站</h3><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><blockquote>
 <p>关于为什么要搭建此博客站？</p>
+<p>作为一名欢乐（kubi）的开发狗，总是需要不断的学习提升自己，这个时候我们需要一个良好的平台去记录下个人的学习心得（踩得各种坑），以便于以后的查阅，因此便有了搭建个人博客的想法，此博客也便应运而生。</p>
 </blockquote>
+<h4 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h4><blockquote>
+<p>本过程是在Mac上进行，其他系统环境可能会有不同，可自行百度</p>
+</blockquote>
+<h6 id="1、安装配置Git"><a href="#1、安装配置Git" class="headerlink" title="1、安装配置Git"></a>1、安装配置Git</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 检查是否已经安装了git和node.js</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ node -v <span class="comment">#是否出现安装版本信息，出现说明已经安装了</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">$ git --version <span class="comment">#同上述情况</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 如果未安装，则按照如下命令进行安装（需要先安装 homebrew）：</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">$ brew install git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 配置Git：</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1、配置用户名、邮箱</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"username"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">"email"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2、创建ssh key</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"email"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 3、查看.ssh/id_rsa.pub文件，并复制里面的key</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">$ open .ssh/id_rsa.pub   <span class="comment"># 或使用 cat命令查看：cat .ssh/id_rsa.pub</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 4、登录GitHub，在settings进行ssh key的配置(这里不再演示),可在终端通过ssh -T git@github.com 命令进行验证是否链接成功。</span></span></pre></td></tr></table></figure>
+
+<h6 id="2、安装Node-js、NPM"><a href="#2、安装Node-js、NPM" class="headerlink" title="2、安装Node.js、NPM"></a>2、安装Node.js、NPM</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 通过 brew 命令一键安装</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ brew install nodejs</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装成功，可通过 node -v ，npm -v验证，另外可通过下载node.js安装包进行安装(不再演示)</span></span></pre></td></tr></table></figure>
+
+<h6 id="3、安装Hexo"><a href="#3、安装Hexo" class="headerlink" title="3、安装Hexo"></a>3、安装Hexo</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span></pre></td></tr></table></figure>
+
+<h6 id="5、创建blog文件夹，并初始化建立博客框架"><a href="#5、创建blog文件夹，并初始化建立博客框架" class="headerlink" title="5、创建blog文件夹，并初始化建立博客框架"></a>5、创建blog文件夹，并初始化建立博客框架</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在自己的工作空间创建 blog文件夹(可任意命名)，并进入该目录下</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ mkdir blog</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> blog</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 初始化目录</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">$ hexo init</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开启本地服务</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">$ hexo s</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>此时，通过访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 便可以看到我们所初始化完成的博客页面了。</p>
+</blockquote>
+<h4 id="关联博客到GitHub仓库"><a href="#关联博客到GitHub仓库" class="headerlink" title="关联博客到GitHub仓库"></a>关联博客到GitHub仓库</h4><blockquote>
+<p>在上面，我们已经搭建好了Git环境，现在在GitHub端创建远程仓库并进行关联。</p>
+<p>这里需要在个人的GitHub账号下新建仓库：<em>username.github.io</em>,这里的username需要与GitHub的用户名相同。</p>
+</blockquote>
+<p>在上面初始化完成的blog目录下面会有一个 <em>_config.yml</em> 文件，是个人博客的主要配置文件，现在打开此文件进行配置，关联GitHub如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">deploy:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">type</span>: <span class="string">'git'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  repo: https://github.com/wupeng0914/wupeng0914.github.io.git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  branch: master</span></pre></td></tr></table></figure>
+
+<p>通过npm命令安装 hexo-deployer-git ：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git –save</span></pre></td></tr></table></figure>
+
+<p>然后在blog目录下执行如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 产生静态网页</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ hexo g</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 部署到GitHub page上</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">$ hexo d</span></pre></td></tr></table></figure>
+
+<p>此时，可以通过<em><a href="http://username.github.io" target="_blank" rel="noopener">http://username.github.io</a></em> 访问到我们的个人博客了。</p>
+<p>接下来就是一些主题更换等等的美化操作，以及一些搜索，访问统计方面的优化操作了。</p>
 
       
     </div>
@@ -536,7 +566,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Hexo-GitHub-搭建个人博客站"><span class="nav-number">1.</span> <span class="nav-text">使用Hexo + GitHub 搭建个人博客站</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Hexo-GitHub-搭建个人博客站"><span class="nav-number">1.</span> <span class="nav-text">使用Hexo + GitHub 搭建个人博客站</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#搭建"><span class="nav-number">1.2.</span> <span class="nav-text">搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1、安装配置Git"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">1、安装配置Git</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2、安装Node-js、NPM"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">2、安装Node.js、NPM</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3、安装Hexo"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">3、安装Hexo</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#5、创建blog文件夹，并初始化建立博客框架"><span class="nav-number">1.2.0.4.</span> <span class="nav-text">5、创建blog文件夹，并初始化建立博客框架</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联博客到GitHub仓库"><span class="nav-number">1.3.</span> <span class="nav-text">关联博客到GitHub仓库</span></a></li></ol></li></ol></div>
             
 
           </div>
