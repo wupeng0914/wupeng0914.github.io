@@ -81,13 +81,13 @@
 
 
 
-<meta name="description" content="看懂 UML 类图####一、UML定义 首先看下比较官方化的定义：  UML：统一建模语言(Unified Modeling Language)它是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML展现了一系列最佳工程实践，这些最佳实践在对大规模，复杂系统进行建模方面，特别是在软件架构层次已经被验证有效。 ——维基百科  从上面的定义上可">
+<meta name="description" content="看懂 UML 类图一、UML定义首先看下比较官方化的定义：  UML：统一建模语言(Unified Modeling Language)它是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML展现了一系列最佳工程实践，这些最佳实践在对大规模，复杂系统进行建模方面，特别是在软件架构层次已经被验证有效。 ——维基百科  从上面的定义上可能比较抽象">
 <meta name="keywords" content="工具，UML，类图">
 <meta property="og:type" content="article">
 <meta property="og:title" content="看懂UML类图">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;12&#x2F;02&#x2F;%E7%9C%8B%E6%87%82UML%E7%B1%BB%E5%9B%BE&#x2F;index.html">
 <meta property="og:site_name" content="修道小和尚">
-<meta property="og:description" content="看懂 UML 类图####一、UML定义 首先看下比较官方化的定义：  UML：统一建模语言(Unified Modeling Language)它是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML展现了一系列最佳工程实践，这些最佳实践在对大规模，复杂系统进行建模方面，特别是在软件架构层次已经被验证有效。 ——维基百科  从上面的定义上可">
+<meta property="og:description" content="看懂 UML 类图一、UML定义首先看下比较官方化的定义：  UML：统一建模语言(Unified Modeling Language)它是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML展现了一系列最佳工程实践，这些最佳实践在对大规模，复杂系统进行建模方面，特别是在软件架构层次已经被验证有效。 ——维基百科  从上面的定义上可能比较抽象">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;12&#x2F;02&#x2F;%E7%9C%8B%E6%87%82UML%E7%B1%BB%E5%9B%BE&#x2F;single_class.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;12&#x2F;02&#x2F;%E7%9C%8B%E6%87%82UML%E7%B1%BB%E5%9B%BE&#x2F;extends.png">
@@ -97,7 +97,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;12&#x2F;02&#x2F;%E7%9C%8B%E6%87%82UML%E7%B1%BB%E5%9B%BE&#x2F;association.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;12&#x2F;02&#x2F;%E7%9C%8B%E6%87%82UML%E7%B1%BB%E5%9B%BE&#x2F;aggregation.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;12&#x2F;02&#x2F;%E7%9C%8B%E6%87%82UML%E7%B1%BB%E5%9B%BE&#x2F;compostion.png">
-<meta property="og:updated_time" content="2019-12-05T02:36:26.202Z">
+<meta property="og:updated_time" content="2019-12-05T02:38:29.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;12&#x2F;02&#x2F;%E7%9C%8B%E6%87%82UML%E7%B1%BB%E5%9B%BE&#x2F;single_class.png">
 
@@ -361,8 +361,7 @@
       
 
       
-        <h3 id="看懂-UML-类图"><a href="#看懂-UML-类图" class="headerlink" title="看懂 UML 类图"></a>看懂 UML 类图</h3><p>####一、UML定义</p>
-<p>首先看下比较官方化的定义：</p>
+        <h3 id="看懂-UML-类图"><a href="#看懂-UML-类图" class="headerlink" title="看懂 UML 类图"></a>看懂 UML 类图</h3><h4 id="一、UML定义"><a href="#一、UML定义" class="headerlink" title="一、UML定义"></a>一、UML定义</h4><p>首先看下比较官方化的定义：</p>
 <blockquote>
 <h6 id="UML：统一建模语言-Unified-Modeling-Language"><a href="#UML：统一建模语言-Unified-Modeling-Language" class="headerlink" title="UML：统一建模语言(Unified Modeling Language)"></a>UML：统一建模语言(Unified Modeling Language)</h6><p>它是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML展现了一系列最佳工程实践，这些最佳实践在对大规模，复杂系统进行建模方面，特别是在软件架构层次已经被验证有效。</p>
 <p><span style="float:right">——维基百科</span></p>
@@ -625,7 +624,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#看懂-UML-类图"><span class="nav-number">1.</span> <span class="nav-text">看懂 UML 类图</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#UML：统一建模语言-Unified-Modeling-Language"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">UML：统一建模语言(Unified Modeling Language)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、类图"><span class="nav-number">1.1.</span> <span class="nav-text">二、类图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、UML类图六种关系"><span class="nav-number">1.2.</span> <span class="nav-text">三、UML类图六种关系</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、泛化关系"><span class="nav-number">1.2.1.</span> <span class="nav-text">1、泛化关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、实现关系"><span class="nav-number">1.2.2.</span> <span class="nav-text">2、实现关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、依赖关系"><span class="nav-number">1.2.3.</span> <span class="nav-text">3、依赖关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、关联关系"><span class="nav-number">1.2.4.</span> <span class="nav-text">4、关联关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、组合关系"><span class="nav-number">1.2.5.</span> <span class="nav-text">6、组合关系</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#看懂-UML-类图"><span class="nav-number">1.</span> <span class="nav-text">看懂 UML 类图</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、UML定义"><span class="nav-number">1.1.</span> <span class="nav-text">一、UML定义</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#UML：统一建模语言-Unified-Modeling-Language"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">UML：统一建模语言(Unified Modeling Language)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、类图"><span class="nav-number">1.2.</span> <span class="nav-text">二、类图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、UML类图六种关系"><span class="nav-number">1.3.</span> <span class="nav-text">三、UML类图六种关系</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、泛化关系"><span class="nav-number">1.3.1.</span> <span class="nav-text">1、泛化关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、实现关系"><span class="nav-number">1.3.2.</span> <span class="nav-text">2、实现关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、依赖关系"><span class="nav-number">1.3.3.</span> <span class="nav-text">3、依赖关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、关联关系"><span class="nav-number">1.3.4.</span> <span class="nav-text">4、关联关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、组合关系"><span class="nav-number">1.3.5.</span> <span class="nav-text">6、组合关系</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
