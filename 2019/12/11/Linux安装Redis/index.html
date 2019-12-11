@@ -91,6 +91,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211142957483.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211143410886.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211143410886.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211145819246.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211145911292.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211150624333.png">
@@ -100,7 +101,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211152650108.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211152937819.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211153412308.png">
-<meta property="og:updated_time" content="2019-12-11T08:08:38.537Z">
+<meta property="og:updated_time" content="2019-12-11T08:12:39.110Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211142957483.png">
 
@@ -369,37 +370,46 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ wget http://download.redis.io/releases/redis-5.0.5.tar.gz</span></pre></td></tr></table></figure>
 
 <p>或直接通过Redis官网进行安装包下载。</p>
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211142957483.png" alt="image-20191211142957483"></p>
+<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211142957483.png" style="zoom:50%;"><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211143410886.png" alt="img"></p>
 <h5 id="第二步：安装"><a href="#第二步：安装" class="headerlink" title="第二步：安装"></a>第二步：安装</h5><h6 id="1、解压安装包"><a href="#1、解压安装包" class="headerlink" title="1、解压安装包"></a>1、解压安装包</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ tar -zxf redis-5.0.5.tar.gz</span></pre></td></tr></table></figure>
 
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211143410886.png" alt="image-20191211143410886"></p>
-<h6 id="2、进入解压后的文件目录并使用”make-amp-amp-make-install”命令对解压的Redis文件进行编译并安装"><a href="#2、进入解压后的文件目录并使用”make-amp-amp-make-install”命令对解压的Redis文件进行编译并安装" class="headerlink" title="2、进入解压后的文件目录并使用”make &amp;&amp; make install”命令对解压的Redis文件进行编译并安装"></a>2、进入解压后的文件目录并使用”make &amp;&amp; make install”命令对解压的Redis文件进行编译并安装</h6><p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211145819246.png" alt="image-20191211145819246"></p>
+<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211143410886.png" alt="img"></p>
+<h6 id="2、进入解压后的文件目录并使用”make-amp-amp-make-install”命令对解压的Redis文件进行编译并安装"><a href="#2、进入解压后的文件目录并使用”make-amp-amp-make-install”命令对解压的Redis文件进行编译并安装" class="headerlink" title="2、进入解压后的文件目录并使用”make &amp;&amp; make install”命令对解压的Redis文件进行编译并安装"></a>2、进入解压后的文件目录并使用”make &amp;&amp; make install”命令对解压的Redis文件进行编译并安装</h6><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211145819246.png" alt="image-20191211145819246" style="zoom:50%;">
+
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> redis-5.0.5/</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ make &amp;&amp; make install PREFIX=/usr/<span class="built_in">local</span>/redis</span></pre></td></tr></table></figure>
 
 <p><font color="red">PREFIX=/usr/local/redis</font>用于指定Redis的安装目录（此处指定安装目录为”/usr/local/redis”，需要手动创建该目录）</p>
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211145911292.png" alt="image-20191211145911292"></p>
+<img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211145911292.png" alt="image-20191211145911292" style="zoom:50%;">
+
 <p>看到此处证明安装成功。</p>
 <p>#####第三步：部署</p>
 <h6 id="1、为便于以后对Redis的管理配置，这里我们将Redis中的conf配置和常用bin命令移动到统一目录下"><a href="#1、为便于以后对Redis的管理配置，这里我们将Redis中的conf配置和常用bin命令移动到统一目录下" class="headerlink" title="1、为便于以后对Redis的管理配置，这里我们将Redis中的conf配置和常用bin命令移动到统一目录下"></a>1、为便于以后对Redis的管理配置，这里我们将Redis中的conf配置和常用bin命令移动到统一目录下</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在/usr/local/redis目录下创建 etc文件夹，用于放置配置文件</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ mkdir etc</span></pre></td></tr></table></figure>
 
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211150624333.png" alt="image-20191211150624333"></p>
+<img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211150624333.png" alt="image-20191211150624333" style="zoom:50%;">
+
 <h6 id="2、将-redis-conf-文件复制到-usr-local-redis-etc-目录下"><a href="#2、将-redis-conf-文件复制到-usr-local-redis-etc-目录下" class="headerlink" title="2、将 redis.conf 文件复制到 /usr/local/redis/etc 目录下"></a>2、将 redis.conf 文件复制到 /usr/local/redis/etc 目录下</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ cp redis.conf /usr/<span class="built_in">local</span>/redis/etc</span></pre></td></tr></table></figure>
 
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211150930604.png" alt="image-20191211150930604"></p>
+<img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211150930604.png" alt="image-20191211150930604" style="zoom:50%;">
+
 <p>######3、将原安装目录下 src 目录中的  mkreleasehdr.sh, redis-benchmark, redis-check-aof ,redis-check-rdb ,redis-cli ,redis-server 等文件复制到 /usr/local/redis/bin 目录下(原本已存在的可不必覆盖)</p>
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211151528041.png" alt="image-20191211151528041"></p>
+<img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211151528041.png" alt="image-20191211151528041" style="zoom:50%;">
+
 <p>测试redis启动：</p>
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211152228045.png" alt="image-20191211152228045"></p>
+<img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211152228045.png" alt="image-20191211152228045" style="zoom:50%;">
+
 <p>此时，redis已经可以正常启动了。</p>
 <p>修改 redis.conf 中的”daemonize”参数为”yes”，使redis可以以后台方式启动：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ vim redis.conf</span></pre></td></tr></table></figure>
 
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211152650108.png" alt="image-20191211152650108"></p>
+<img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211152650108.png" alt="image-20191211152650108" style="zoom:50%;">
+
 <p>以指定的配置启动redis：</p>
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211152937819.png" alt="image-20191211152937819"></p>
+<img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211152937819.png" alt="image-20191211152937819" style="zoom:50%;">
+
 <p>此时，Redis便已在后台启动了。</p>
 <p>现在Redis只能在本服务器进行访问，如果需要允许在外部访问该Redis，可以将redis.conf中的 “bind” 参数值修改为 “0.0.0.0” 即可。</p>
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211153412308.png" alt="image-20191211153412308"></p>
+<img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211153412308.png" alt="image-20191211153412308" style="zoom:50%;">
+
 <p>至此，Redis的基本安装过程已经完毕了！</p>
 
       
