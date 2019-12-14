@@ -81,16 +81,15 @@
 
 
 
-<meta name="description" content="###Linux环境安装Redis数据库 #####第一步：下载Redis安装包 1$ wget http:&#x2F;&#x2F;download.redis.io&#x2F;releases&#x2F;redis-5.0.5.tar.gz  或直接通过Redis官网进行安装包下载。  第二步：安装1、解压安装包1$ tar -zxf redis-5.0.5.tar.gz   2、进入解压后的文件目录并使用”make &amp;amp;&amp;am">
+<meta name="description" content="###Linux环境安装Redis数据库 #####第一步：下载Redis安装包 1$ wget http:&#x2F;&#x2F;download.redis.io&#x2F;releases&#x2F;redis-5.0.5.tar.gz  或直接通过Redis官网进行安装包下载。   第二步：安装1、解压安装包1$ tar -zxf redis-5.0.5.tar.gz   2、进入解压后的文件目录并使用”make &amp;amp;&amp;a">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux安装Redis.md">
 <meta property="og:url" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;index.html">
 <meta property="og:site_name" content="修道小和尚">
-<meta property="og:description" content="###Linux环境安装Redis数据库 #####第一步：下载Redis安装包 1$ wget http:&#x2F;&#x2F;download.redis.io&#x2F;releases&#x2F;redis-5.0.5.tar.gz  或直接通过Redis官网进行安装包下载。  第二步：安装1、解压安装包1$ tar -zxf redis-5.0.5.tar.gz   2、进入解压后的文件目录并使用”make &amp;amp;&amp;am">
+<meta property="og:description" content="###Linux环境安装Redis数据库 #####第一步：下载Redis安装包 1$ wget http:&#x2F;&#x2F;download.redis.io&#x2F;releases&#x2F;redis-5.0.5.tar.gz  或直接通过Redis官网进行安装包下载。   第二步：安装1、解压安装包1$ tar -zxf redis-5.0.5.tar.gz   2、进入解压后的文件目录并使用”make &amp;amp;&amp;a">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211142957483.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211143410886.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211143410886.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211145819246.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211145911292.png">
@@ -101,7 +100,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211152650108.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211152937819.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211153412308.png">
-<meta property="og:updated_time" content="2019-12-11T08:18:52.307Z">
+<meta property="og:updated_time" content="2019-12-14T13:02:40.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;Linux%E5%AE%89%E8%A3%85Redis&#x2F;image-20191211142957483.png">
 
@@ -370,7 +369,8 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ wget http://download.redis.io/releases/redis-5.0.5.tar.gz</span></pre></td></tr></table></figure>
 
 <p>或直接通过Redis官网进行安装包下载。</p>
-<p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211142957483.png" style="zoom:50%;"><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211143410886.png" alt="img"></p>
+<img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211142957483.png" style="zoom:50%;">
+
 <h5 id="第二步：安装"><a href="#第二步：安装" class="headerlink" title="第二步：安装"></a>第二步：安装</h5><h6 id="1、解压安装包"><a href="#1、解压安装包" class="headerlink" title="1、解压安装包"></a>1、解压安装包</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ tar -zxf redis-5.0.5.tar.gz</span></pre></td></tr></table></figure>
 
 <p><img src="/2019/12/11/Linux%E5%AE%89%E8%A3%85Redis/image-20191211143410886.png" alt="img"></p>
@@ -451,6 +451,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/12/12/Linux%E5%AE%89%E8%A3%85Nexus/" rel="prev" title="Linux安装Nexus">
+                Linux安装Nexus <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -530,7 +534,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -541,7 +545,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -552,7 +556,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
