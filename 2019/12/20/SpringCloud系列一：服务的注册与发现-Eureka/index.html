@@ -81,20 +81,20 @@
 
 
 
-<meta name="description" content="SpringCloud系列一：服务的注册与发现(Eureka)  本文所使用的Spring Cloud版本对应文档地址： https:&#x2F;&#x2F;cloud.spring.io&#x2F;spring-cloud-static&#x2F;Greenwich.RELEASE&#x2F;multi&#x2F;multi_spring-cloud.html Spring Cloud简介: springCloud是基于SpringBoot的一整套">
+<meta name="description" content="本文所使用的Spring Cloud版本对应文档地址： https:&#x2F;&#x2F;cloud.spring.io&#x2F;spring-cloud-static&#x2F;Greenwich.RELEASE&#x2F;multi&#x2F;multi_spring-cloud.html Spring Cloud简介: springCloud是基于SpringBoot的一整套实现微服务的框架。他提供了微服务开发所需的配置管理、服务发现、断路器、智">
 <meta name="keywords" content="Spring Cloud">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringCloud系列一：服务的注册与发现(Eureka)">
 <meta property="og:url" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;20&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%B8%80%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0-Eureka&#x2F;index.html">
 <meta property="og:site_name" content="修道小和尚">
-<meta property="og:description" content="SpringCloud系列一：服务的注册与发现(Eureka)  本文所使用的Spring Cloud版本对应文档地址： https:&#x2F;&#x2F;cloud.spring.io&#x2F;spring-cloud-static&#x2F;Greenwich.RELEASE&#x2F;multi&#x2F;multi_spring-cloud.html Spring Cloud简介: springCloud是基于SpringBoot的一整套">
+<meta property="og:description" content="本文所使用的Spring Cloud版本对应文档地址： https:&#x2F;&#x2F;cloud.spring.io&#x2F;spring-cloud-static&#x2F;Greenwich.RELEASE&#x2F;multi&#x2F;multi_spring-cloud.html Spring Cloud简介: springCloud是基于SpringBoot的一整套实现微服务的框架。他提供了微服务开发所需的配置管理、服务发现、断路器、智">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:&#x2F;&#x2F;spring.io&#x2F;img&#x2F;homepage&#x2F;diagram-distributed-systems.svg">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;20&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%B8%80%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0-Eureka&#x2F;image-20191220182001137.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;20&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%B8%80%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0-Eureka&#x2F;image-20191220195204808.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;20&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%B8%80%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0-Eureka&#x2F;image-20191220201027678.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;20&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%B8%80%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0-Eureka&#x2F;wupeng&#x2F;workplace&#x2F;practice&#x2F;blog&#x2F;source&#x2F;_posts&#x2F;SpringCloud系列一：服务的注册与发现-Eureka&#x2F;image-20191220201313275.png">
-<meta property="og:updated_time" content="2019-12-21T04:01:44.726Z">
+<meta property="og:updated_time" content="2019-12-21T06:16:56.669Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;spring.io&#x2F;img&#x2F;homepage&#x2F;diagram-distributed-systems.svg">
 
@@ -358,10 +358,7 @@
       
 
       
-        <div align="center" style="width: 100%; height:36px; background: #FFEFD5;line-height: 36px; font-size: 24px; font-weight: bold;">
-  SpringCloud系列一：服务的注册与发现(Eureka)
-
-<p>本文所使用的Spring Cloud版本对应文档地址：</p>
+        <p>本文所使用的Spring Cloud版本对应文档地址：</p>
 <p><a href="https://cloud.spring.io/spring-cloud-static/Greenwich.RELEASE/multi/multi_spring-cloud.html" target="_blank" rel="noopener">https://cloud.spring.io/spring-cloud-static/Greenwich.RELEASE/multi/multi_spring-cloud.html</a></p>
 <h5 id="Spring-Cloud简介"><a href="#Spring-Cloud简介" class="headerlink" title="Spring Cloud简介:"></a>Spring Cloud简介:</h5><blockquote>
 <p>springCloud是基于SpringBoot的一整套实现微服务的框架。他提供了微服务开发所需的配置管理、服务发现、断路器、智能路由、微代理、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等组件。最重要的是，跟spring boot框架一起使用的话，会让你开发微服务架构的云服务非常好的方便。 SpringBoot旨在简化创建产品级的 Spring 应用和服务，简化了配置文件，使用嵌入式web服务器，含有诸多开箱即用微服务功能。</p>
@@ -422,7 +419,7 @@
 
 <p><a href="https://github.com/wupeng0914/marvel/tree/master" target="_blank" rel="noopener">项目GitHub地址</a></p>
 <h6 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h6><p><a href="https://cloud.spring.io/spring-cloud-static/Greenwich.RELEASE/multi/multi_spring-cloud.html" target="_blank" rel="noopener">Spring Clound 官方文档：Greenwich.RELEASE</a></p>
-</div>
+
       
     </div>
     
