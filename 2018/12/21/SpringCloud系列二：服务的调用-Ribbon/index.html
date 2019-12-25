@@ -85,16 +85,16 @@
 <meta name="keywords" content="Spring Cloud">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringCloud系列二：服务的调用(Ribbon)">
-<meta property="og:url" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2018&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;index.html">
 <meta property="og:site_name" content="修道小和尚">
 <meta property="og:description" content="Spring cloud有两种服务调用方式，一种是ribbon+restTemplate，另一种是feign。 一、Ribbon简介 Ribbon is a client-side load balancer that gives you a lot of control over the behavior of HTTP and TCP clients. Feign already uses R">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;image-20191221145109644.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;image-20191221145821000.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;image-20191225111336978.png">
-<meta property="og:updated_time" content="2019-12-25T03:21:25.767Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2018&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;image-20191221145109644.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2018&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;image-20191221145821000.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2018&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;image-20191225111336978.png">
+<meta property="og:updated_time" content="2019-12-25T03:43:58.034Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2019&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;image-20191221145109644.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;wupeng0914.github.io&#x2F;2018&#x2F;12&#x2F;21&#x2F;SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon&#x2F;image-20191221145109644.png">
 
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="http://wupeng0914.github.io/2019/12/21/SpringCloud系列二：服务的调用-Ribbon/"/>
+  <link rel="canonical" href="http://wupeng0914.github.io/2018/12/21/SpringCloud系列二：服务的调用-Ribbon/"/>
 
 
 
@@ -267,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wupeng0914.github.io/2019/12/21/SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon/">
+    <link itemprop="mainEntityOfPage" href="http://wupeng0914.github.io/2018/12/21/SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="修道小和尚">
@@ -296,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-21T11:59:09+08:00">
-                2019-12-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-21T11:59:09+08:00">
+                2018-12-21
               </time>
             
 
@@ -408,10 +408,10 @@
 </tr>
 </tbody></table>
 <p>基于上一篇文章的基础上，启动Eureka server注册中心；启动service-hello，然后更改service-hello的配置文件application.xml中的server.port=8763,并将idea进行如下设置：</p>
-<img src="/2019/12/21/SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon/image-20191221145109644.png" alt="image-20191221145109644" style="zoom:50%;">
+<img src="/2018/12/21/SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon/image-20191221145109644.png" alt="image-20191221145109644" style="zoom:50%;">
 
 <p>再次启动service-hello，打开注册中心页面：<a href="http://localhost:8761可以看到service-hello在Eureka中注册了两个实例：" target="_blank" rel="noopener">http://localhost:8761可以看到service-hello在Eureka中注册了两个实例：</a></p>
-<img src="/2019/12/21/SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon/image-20191221145821000.png" alt="image-20191221145821000" style="zoom:50%;">
+<img src="/2018/12/21/SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon/image-20191221145821000.png" alt="image-20191221145821000" style="zoom:50%;">
 
 <p>#####二、创建一个服务消费者模块（customer-ribbon）：</p>
 <p>新建服务消费模块，并在pom文件中引入<b>spring-cloud-starter-eureka、spring-cloud-starter-ribbon、spring-boot-starter-web</b>等依赖：</p>
@@ -434,7 +434,7 @@
 
 <p>此时，说明通过RestTmplate访问<a href="http://SERVICE-HELLO/hello的时候，Ribbon已做了负载均衡（默认是轮询的访问方式）。" target="_blank" rel="noopener">http://SERVICE-HELLO/hello的时候，Ribbon已做了负载均衡（默认是轮询的访问方式）。</a></p>
 <p>此时的架构：</p>
-<img src="/2019/12/21/SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon/image-20191225111336978.png" alt="image-20191225111336978" style="zoom:50%;">
+<img src="/2018/12/21/SpringCloud%E7%B3%BB%E5%88%97%E4%BA%8C%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Ribbon/image-20191225111336978.png" alt="image-20191225111336978" style="zoom:50%;">
 
 <h6 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h6><p><a href="https://blog.csdn.net/forezp/article/details/81040946" target="_blank" rel="noopener">https://blog.csdn.net/forezp/article/details/81040946</a></p>
 <p><a href="https://cloud.spring.io/spring-cloud-static/Greenwich.RELEASE/single/spring-cloud.html#netflix-ribbon-starter" target="_blank" rel="noopener">https://cloud.spring.io/spring-cloud-static/Greenwich.RELEASE/single/spring-cloud.html#netflix-ribbon-starter</a></p>
@@ -468,7 +468,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/12/20/SpringCloud%E7%B3%BB%E5%88%97%E4%B8%80%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0-Eureka/" rel="next" title="SpringCloud系列一：服务的注册与发现(Eureka)">
+              <a href="/2018/12/20/SpringCloud%E7%B3%BB%E5%88%97%E4%B8%80%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0-Eureka/" rel="next" title="SpringCloud系列一：服务的注册与发现(Eureka)">
                 <i class="fa fa-chevron-left"></i> SpringCloud系列一：服务的注册与发现(Eureka)
               </a>
             
@@ -477,6 +477,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/25/SpringCloud%E7%B3%BB%E5%88%97%E4%B8%89%EF%BC%9A%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%B0%83%E7%94%A8-Feign/" rel="prev" title="SpringCloud系列三：服务的调用(Feign)">
+                SpringCloud系列三：服务的调用(Feign) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -557,7 +561,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
